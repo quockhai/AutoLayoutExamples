@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CameraLayout/CameraLayout.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Priorities/Priorities.xcodeproj">
    </FileRef>
    <FileRef
