@@ -12,8 +12,8 @@ class CustomView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        let view = UINib(nibName: "CustomView", bundle: .main).instantiate(withOwner: nil, options: nil).first as! UIView
-        // let view = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)!.first as! UIView // does the same as above
+//        let view = UINib(nibName: "CustomView", bundle: .main).instantiate(withOwner: nil, options: nil).first as! UIView
+        let view = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)!.first as! UIView // does the same as above
         view.frame = self.bounds
         self.addSubview(view)
     }
@@ -23,8 +23,9 @@ class CustomView: UIView {
         
         super.init(coder: aDecoder)
         
-        let view = UINib(nibName: "CustomView", bundle: .main).instantiate(withOwner: nil, options: nil).first as! UIView
-        // let view = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)!.first as! UIView // does the same as above
+//        let view = UINib(nibName: "CustomView", bundle: .main).instantiate(withOwner: nil, options: nil).first as! UIView
+        
+        let view = Bundle.main.loadNibNamed("CustomView", owner: nil, options: nil)!.first as! UIView // does the same as above
         view.frame = self.bounds
         self.addSubview(view)
     }

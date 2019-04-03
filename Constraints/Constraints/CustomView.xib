@@ -15,10 +15,76 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="322"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMm-ga-rdh">
+                    <rect key="frame" x="182" y="136" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="DZk-WG-VZF"/>
+                        <constraint firstAttribute="height" constant="50" id="o4C-bN-GMe"/>
+                    </constraints>
+                    <state key="normal" image="skip-forward"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6f-1N-tnM">
+                    <rect key="frame" x="240" y="136" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6h3-ui-xrD"/>
+                        <constraint firstAttribute="height" constant="50" id="wcY-If-6Zv"/>
+                    </constraints>
+                    <state key="normal" image="share"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdn-De-umM">
+                    <rect key="frame" x="298" y="136" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="K69-Lc-gCP"/>
+                        <constraint firstAttribute="width" constant="50" id="liy-cg-Dkw"/>
+                    </constraints>
+                    <state key="normal" image="minimize"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKM-BF-QgI">
+                    <rect key="frame" x="124" y="136" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Urw-T2-vDA"/>
+                        <constraint firstAttribute="height" constant="50" id="WC8-NO-ksz"/>
+                    </constraints>
+                    <state key="normal" image="pause"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke9-NC-KZJ">
+                    <rect key="frame" x="66" y="136" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="JEJ-ic-GUA"/>
+                        <constraint firstAttribute="height" constant="50" id="NwN-Cf-6sL"/>
+                    </constraints>
+                    <state key="normal" image="skip-back"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aMm-ga-rdh" firstAttribute="top" secondItem="Ke9-NC-KZJ" secondAttribute="top" id="3XH-W0-f9Q"/>
+                <constraint firstItem="Zdn-De-umM" firstAttribute="leading" secondItem="m6f-1N-tnM" secondAttribute="trailing" constant="8" symbolic="YES" id="5Q1-gV-hs0"/>
+                <constraint firstItem="m6f-1N-tnM" firstAttribute="leading" secondItem="aMm-ga-rdh" secondAttribute="trailing" constant="8" symbolic="YES" id="7ho-up-P1h"/>
+                <constraint firstItem="m6f-1N-tnM" firstAttribute="top" secondItem="Ke9-NC-KZJ" secondAttribute="top" id="DeN-44-IbA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="centerX" secondItem="aMm-ga-rdh" secondAttribute="centerX" id="EBK-Dp-EXY"/>
+                <constraint firstItem="aMm-ga-rdh" firstAttribute="leading" secondItem="FKM-BF-QgI" secondAttribute="trailing" constant="8" symbolic="YES" id="aHw-L8-RSU"/>
+                <constraint firstItem="FKM-BF-QgI" firstAttribute="top" secondItem="Ke9-NC-KZJ" secondAttribute="top" id="bgP-gO-c5b"/>
+                <constraint firstItem="FKM-BF-QgI" firstAttribute="leading" secondItem="Ke9-NC-KZJ" secondAttribute="trailing" constant="8" symbolic="YES" id="imN-Bo-NmY"/>
+                <constraint firstItem="Zdn-De-umM" firstAttribute="top" secondItem="Ke9-NC-KZJ" secondAttribute="top" id="jnq-kC-weP"/>
+                <constraint firstItem="aMm-ga-rdh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kDL-LK-Wdf"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="115.94202898550725" y="22.098214285714285"/>
         </view>
     </objects>
+    <resources>
+        <image name="minimize" width="20" height="20"/>
+        <image name="pause" width="14" height="18"/>
+        <image name="share" width="20" height="22"/>
+        <image name="skip-back" width="16" height="18"/>
+        <image name="skip-forward" width="16" height="18"/>
+    </resources>
 </document>
