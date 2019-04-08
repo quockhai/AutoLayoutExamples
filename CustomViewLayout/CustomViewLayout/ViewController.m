@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     self.photoCollection.delegate = self;
     self.photoCollection.dataSource = self;
     [self.photoCollection registerNib:[UINib nibWithNibName:@"PhotoCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"photoCell"];
