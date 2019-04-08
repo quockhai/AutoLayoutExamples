@@ -16,7 +16,6 @@
         view.frame = self.bounds;
         
         [self addSubview:view];
-        return self;
     }
     
     return self;
