@@ -28,7 +28,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBound" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
@@ -43,31 +42,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyA-L6-0P3">
-                                <rect key="frame" x="20" y="237" width="374" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ShY-zN-wq2" customClass="CustomTextField">
+                                <rect key="frame" x="20" y="237" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g8F-Pi-Cf1"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RyA-L6-0P3" firstAttribute="top" secondItem="rld-YG-Xod" secondAttribute="bottom" constant="8" id="5H4-lx-rpb"/>
                             <constraint firstItem="ZZz-5j-vng" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5gu-LR-qwi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RyA-L6-0P3" secondAttribute="trailing" constant="20" id="MHq-PS-KF7"/>
+                            <constraint firstItem="ShY-zN-wq2" firstAttribute="top" secondItem="rld-YG-Xod" secondAttribute="bottom" constant="8" id="DPw-RD-zl5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ShY-zN-wq2" secondAttribute="trailing" constant="20" id="Fc4-6T-qBk"/>
                             <constraint firstItem="ZZz-5j-vng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MiE-6t-7e8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="rld-YG-Xod" secondAttribute="trailing" constant="250" id="Re9-2C-uJY"/>
                             <constraint firstItem="ZZz-5j-vng" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UkC-r8-yHn"/>
+                            <constraint firstItem="ShY-zN-wq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WvR-up-0SN"/>
                             <constraint firstItem="rld-YG-Xod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hHd-3L-xeQ"/>
                             <constraint firstItem="rld-YG-Xod" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="jDP-Qg-StQ"/>
-                            <constraint firstItem="RyA-L6-0P3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jDz-Ma-vmn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="pET-3S-zgi"/>
-                    <connections>
-                        <outlet property="nameText" destination="RyA-L6-0P3" id="tkM-Sd-dkt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

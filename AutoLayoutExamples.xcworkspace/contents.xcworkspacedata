@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UnderlineTextField/UnderlineTextField.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DemoSegue/DemoSegue.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SegueData/SegueData.xcodeproj">
    </FileRef>
    <FileRef
