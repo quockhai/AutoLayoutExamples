@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  UnderlineTextField
+//  BlurView
 //
-//  Created by quockhai on 2019/4/8.
+//  Created by quockhai on 2019/4/9.
 //  Copyright © 2019 Polymath. All rights reserved.
 //
 
@@ -17,8 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.emailText.inputText.placeholder = @"Password";
 }
 
 

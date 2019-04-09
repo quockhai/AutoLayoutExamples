@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomTextField : UIView
+@property (strong, nonatomic) IBOutlet UITextField *inputText;
 
 @end
 

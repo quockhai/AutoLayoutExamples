@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BlurView/BlurView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:UnderlineTextField/UnderlineTextField.xcodeproj">
    </FileRef>
    <FileRef
