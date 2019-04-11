@@ -15,6 +15,7 @@
 		881757E2225B36FC00DE8D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881757E1225B36FC00DE8D16 /* main.m */; };
 		881757E9225B374D00DE8D16 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881757E8225B374D00DE8D16 /* CustomTextField.xib */; };
 		881757EC225B375C00DE8D16 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 881757EB225B375C00DE8D16 /* CustomTextField.m */; };
+		8854BF18225ED7CE0027F26E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8854BF17225ED7CE0027F26E /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		881757E8225B374D00DE8D16 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
 		881757EA225B375C00DE8D16 /* CustomTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
 		881757EB225B375C00DE8D16 /* CustomTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		8854BF16225ED7CE0027F26E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8854BF17225ED7CE0027F26E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				881757E8225B374D00DE8D16 /* CustomTextField.xib */,
 				881757EA225B375C00DE8D16 /* CustomTextField.h */,
 				881757EB225B375C00DE8D16 /* CustomTextField.m */,
+				8854BF16225ED7CE0027F26E /* Person.h */,
+				8854BF17225ED7CE0027F26E /* Person.m */,
 			);
 			path = UnderlineTextField;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			files = (
 				881757EC225B375C00DE8D16 /* CustomTextField.m in Sources */,
 				881757D7225B36FC00DE8D16 /* ViewController.m in Sources */,
+				8854BF18225ED7CE0027F26E /* Person.m in Sources */,
 				881757E2225B36FC00DE8D16 /* main.m in Sources */,
 				881757D4225B36FC00DE8D16 /* AppDelegate.m in Sources */,
 			);

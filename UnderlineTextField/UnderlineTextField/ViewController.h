@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomTextField.h"
+#import "Person.h"
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet CustomTextField *emailText;
